@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        font-size: small;
+        margin: 0;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .icon {
+        width: 18px;
+      }
+      .icon_keyboard {
+        height: 20px;
+        width:25px;
+      }
+      .image_container {
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 15px;
+      }
+      .search_container_container {
+        text-align: center;
+        width:100%;
+        height: 50px;
+      }
+      .search_container {
+        width: 500px;
+        text-align: center; 
+        height: 100%;
+        border-radius: 30px;
+        border-color: lightgrey;
+        border-style: solid;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-width: 1px;
+      }
+      .search_container img {
+        padding:10px;
+      }
+      .search_container:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+      }
+      .search_bar {
+        display:inline;
+        width: 400px;
+        height: 48px;
+        font-size: 28px;
+        border-radius: 30px;
+        border-color: lightgrey;
+        border-style: hidden;
+      }
+      .search_bar:focus {
+        outline: none;
+      }
+      .button_area {
+        text-align: center;
+        font-size: 50px;
+      }
+      .button {
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+        border-width: 1px;
+        background-color: rgba(0,0,0,.05);
+        font-size: 15px;
+        padding: 10px;
+      }
+      .button:hover {
+        border-style: solid;
+        border-color: lightgrey;
+        border-radius: 10px;
+        border-width: 1px;
+      }
+      .paragraph {
+        text-align: center;
+      }
+      .footer_upper {
+        background-color: rgba(0,0,0,.05);
+        padding-left: 10px;
+        padding-top: 10px;
+        line-height: 0px;
+        height: 50px;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey; 
+        position: absolute;
+        bottom: 0;
+        right:0;
+        margin-bottom: 60px;
+        width: 100%;
+        color: slategray;
+      }
+      .footer {
+        background-color: rgba(0,0,0,.05);
+        padding: 10px 0px 10px 10px; 
+        position: absolute;
+        bottom:0;
+        right: 0;
+        width:100%;
+        height: 40px;
+        color: slategray;
+      }
+      .footer a {
+       color:slategray;
+      }
+      .navbar {
+        text-align: right;
+      }
+      .navbar a {
+        color: black;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0px;
+      }
+      li {
+        display: inline;
+        margin: 10px;
+      }
+      a:link, a:visited {
+       text-decoration: none;
+      }
+      a:hover {
+       text-decoration: underline;
+      }
+    </style>
+  </head>
+    <body>
+      <div class="navbar">
+        <ul>
+          <li><a href="">Gmail</a></li>
+          <li><a href="">Grafika</a></li>
+          <li><a href=""><img class="icon" src="https://cdn.icon-icons.com/icons2/1129/PNG/512/buttonsymbolofninedots_80014.png"></img></a></li>
+          <li><a href="">👤</a></li>
+        </ul>
+      </div>
+      <div class="image_container"> 
+        <img id="google_logo" alt="google_logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      </div>
+      <div class="search_container_container">
+      <div class="search_container"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_Magnifying_Glass.svg">
+        <input class="search_bar" type="text" placeholder="search Google or type a URL">
+        <a href=""><img class="icon_keyboard" src="https://icons.iconarchive.com/icons/google/noto-emoji-objects/256/62829-keyboard-icon.png"></a>
+        <a href=""><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"></a>
+    </div>
+      </div>
+      <div class="button_area"> 
+        <button class="button">
+          Szukaj w Google
+        </button>
+        <button class="button">
+          Szczęśliwy traf
+        </button>
+      </div>
+      <p class="paragraph"> 
+        Korzystaj z Google w tych językach: <a href="google.de">Deutsch</a> <a href="google.com">English</a> <a href="google.fr">Français</a> <a href="google.it">Italiano</a> <a href="google.ru">Rumantsch</a>
+      </p>
+      <div class="footer_upper" id="footer_upper">
+        <ul>
+          <li>Szwajcaria</li>
+        </ul>
+      </div>
+      <div class="footer" id="footer">
+        <div class="left"><ul>
+          <li><a href="">Reklamuj się</a></li>
+          <li><a href="">Dla firm</a></li>
+          <li><a href="">O nas</a></li>
+          <li><a href="">Jak działa wyszukiwarka</a></li>
+          </ul>
+        </div>
+        <div class="right">
+         <ul>
+          <li><a href="">Prywatność</a></li>
+          <li><a href="">Warunki</a></li>
+          <li><a href="">Ustawienia</a></li>
+        </ul>
+        </div>
+      </div>
+    </body>
+</html>
